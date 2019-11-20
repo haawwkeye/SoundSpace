@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" style="--vh:3.85px;"><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e2609a">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="hsl(255, 10%, 40%)"> 
+
+<meta charset="utf-8">
+<meta name="description" content="osu! - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor.">
+<meta name="keywords" content="osu, peppy, ouendan, elite, beat, agents, ds, windows, game, taiko, tatsujin, simulator, sim, xna, ddr, beatmania, osu!, osume">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="csrf-param" content="_token">
+<meta name="csrf-token" content="GqruBLdfgr8PaB4Gh5uPYcJO8kyhmcNakoWoqmQd">
+
+<meta name="turbolinks-cache-control" content="no-preview">
+
+    <meta name="ga-tracking-id" content="UA-4774947-8">
+
+<link href="//fonts.googleapis.com/css?family=Exo+2:300,300italic,200,200italic,400,400italic,500,500italic,600,600italic,700,700italic,900" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" media="all" href="/vendor/_photoswipe-default-skin/default-skin.css">
+<link rel="stylesheet" media="all" href="/css/app.css?id=96adcd327150c984f9f8" data-turbolinks-track="reload">
+
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+    var currentLocale = "en";
+    var fallbackLocale = "en";
+</script>
+
+<script src="/js/vendor.js?id=25cd8eed5cc1101ec309" data-turbolinks-track="reload"></script>
+<script src="/js/app-deps.js?id=11ca76a1d978f0b36a60" data-turbolinks-track="reload"></script>
+<script src="/js/locales/en.js?id=2397aebb8e94ace75e4c" data-turbolinks-track="reload"></script>
+
+<script src="/js/commons.js?id=90a2764bba9ce792966c" data-turbolinks-track="reload"></script>
+<script src="/js/app.js?id=4ecd4ea40e06c97d9479" data-turbolinks-track="reload"></script>
+<script src="/vendor/js/timeago-locales/jquery.timeago.en.js" data-turbolinks-track="reload"></script>
+<script src="//s.ppy.sh/js/site-switcher.js?f1234j8i9" async=""></script>
+
+    <script src="/vendor/js/moment-locales/en-gb.js" data-turbolinks-track="reload"></script>
+
+
+        <title>welcome | osu!</title>
+    </head>
+
+    <body class="
+            osu-layout
+            osu-layout--body
+            t-section
+            action-index
+            osu-layout--body-landing
+        ">
+        <style>
+            :root {
+                                --base-hue: 255;
+                --base-hue-deg: 255deg;
+            }
+        </style>
+        <div id="overlay" class="blackout blackout--overlay" style="display: none;"></div>
+        <div class="blackout js-blackout" data-visibility="hidden"></div>
+
+        
+                <div class="osu-layout__section osu-layout__section--full js-content home_index">
+                                            <nav class="osu-layout__row">
+        <!-- Mobile Navigation -->
+        <div class="visible-xs no-print js-header--main">
+    <div class="navbar-mobile-before"></div>
+
+    <div class="
+            navbar-mobile
+            u-section--bg
+        " role="navigation">
+        <div class="container">
+            <div class="navbar-header navbar-mobile__header">
+                <div class="navbar-mobile__header-section">
+                    <a class="navbar-mobile__logo" href="https://osu.ppy.sh/home"></a>
+                    <span class="navbar-mobile__brand navbar-brand u-ellipsis-overflow">
+                        dashboard
+                    </span>
+                </div>
+
+                <div class="navbar-mobile__header-section navbar-mobile__header-section--buttons">
+                                            <a href="#" title="click to sign in" class="avatar avatar--navbar-mobile avatar--guest js-navbar-mobile--top-icon js-user-link">
+                        </a>
+                    
+                    <button type="button" class="navbar-toggle navbar-mobile__toggle u-section--color-hover" data-toggle="collapse" data-target="#xs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-mobile__toggle-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse navbar-mobile__menu js-navbar-mobile--menu" id="xs-navbar">
+        <ul class="nav navbar-nav navbar-mobile__menu-items">
+            <li class="navbar-mobile-item navbar-mobile-item--user">
+            <a class="js-user-link navbar-mobile-item__main navbar-mobile-item__main--user" href="#" title="click to sign in" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+            <span class="avatar avatar--guest avatar--navbar-mobile"></span>
+
+            Guest
+        </a>
+    </li>
+            <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/home/friends">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            profile
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-profile">
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/friends" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        friends
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/account/edit" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        settings
+                    </a>
+                </li>
+                    </ul>
+    </li>
+    <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/home">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            home
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-home">
+                                                                                <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/news" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        news
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/help/wiki/Team" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        team
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/changelog" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        changelog
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/download" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        download
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/search" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        search
+                    </a>
+                </li>
+                    </ul>
+    </li>
+    <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/beatmapsets">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            beatmaps
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-beatmaps">
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/beatmapsets" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        listing
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/beatmaps/artists" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        featured artists
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/beatmaps/packs" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        packs
+                    </a>
+                </li>
+                    </ul>
+    </li>
+    <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/rankings/osu/performance">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            rankings
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-rankings">
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/rankings/osu/performance" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        performance
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/rankings/osu/charts" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        spotlights
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/rankings/osu/score" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        score
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/rankings/osu/country" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        country
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/p/kudosu" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        kudosu
+                    </a>
+                </li>
+                    </ul>
+    </li>
+    <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/community/forums">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            community
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-community">
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/community/forums" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        forums
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/community/chat" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        chat
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/community/contests" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        contests
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/community/tournaments" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        tournaments
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/community/livestreams" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        live
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://discord.gg/ppy" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        development
+                    </a>
+                </li>
+                    </ul>
+    </li>
+    <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/store/listing">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            store
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-store">
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/store/listing" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        listing
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/store/cart" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        cart
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/store/orders" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        order history
+                    </a>
+                </li>
+                    </ul>
+    </li>
+    <li class="navbar-mobile-item dropdown">
+        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/help/wiki/Main_Page">
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+            <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+
+            help
+        </a>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="expand-help">
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/help/wiki/Main_Page" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        wiki
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/help/wiki/FAQ" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        faq
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/help/wiki/Rules" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        rules
+                    </a>
+                </li>
+                                            <li>
+                    <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/help/wiki/Help_Centre" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                        <span class="navbar-mobile-item__icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+
+                        no, really, i need help!
+                    </a>
+                </li>
+                    </ul>
+    </li>
+            <li class="navbar-mobile-item dropdown">
+    <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="#">
+        <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+
+        <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+            <i class="fas fa-chevron-down"></i>
+        </span>
+
+        <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/GB.png')"></span>
+
+        English
+    </a>
+
+    <ul class="dropdown-menu">
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=en" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/GB.png')"></span>
+
+                    English
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=be" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/BY.png')"></span>
+
+                    Беларуская мова
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=bg" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/BG.png')"></span>
+
+                    Български
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=cs" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/CZ.png')"></span>
+
+                    Česky
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=da" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/DK.png')"></span>
+
+                    Dansk
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=de" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/DE.png')"></span>
+
+                    Deutsch
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=el" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/GR.png')"></span>
+
+                    Ελληνικά
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=es" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/ES.png')"></span>
+
+                    Español
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=fi" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/FI.png')"></span>
+
+                    Suomi
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=fr" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/FR.png')"></span>
+
+                    Français
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=hu" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/HU.png')"></span>
+
+                    Magyar
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=id" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/ID.png')"></span>
+
+                    Bahasa Indonesia
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=it" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/IT.png')"></span>
+
+                    Italiano
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=ja" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/JP.png')"></span>
+
+                    日本語
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=ko" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/KR.png')"></span>
+
+                    한국어
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=nl" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/NL.png')"></span>
+
+                    Nederlands
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=no" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/NO.png')"></span>
+
+                    Norsk
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=pl" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/PL.png')"></span>
+
+                    Polski
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=pt" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/PT.png')"></span>
+
+                    Português
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=pt-br" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/BR.png')"></span>
+
+                    Português (Brasil)
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=ro" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/RO.png')"></span>
+
+                    Română
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=ru" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/RU.png')"></span>
+
+                    Русский
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=sk" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/SK.png')"></span>
+
+                    Slovenčina
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=sv" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/SE.png')"></span>
+
+                    Svenska
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=th" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/TH.png')"></span>
+
+                    ไทย
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=tr" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/TR.png')"></span>
+
+                    Türkçe
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=vi" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/VN.png')"></span>
+
+                    Tiếng Việt
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=zh" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/CN.png')"></span>
+
+                    简体中文
+                </a>
+            </li>
+                    <li>
+                <a class="navbar-mobile-item__submenu" href="https://osu.ppy.sh/home/set-locale?locale=zh-tw" data-remote="1" data-method="POST" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                    <span class="navbar-mobile-item__icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+
+                    <span class="navbar-mobile-item__locale-flag" style="background-image: url('/images/flags/TW.png')"></span>
+
+                    繁體中文（台灣）
+                </a>
+            </li>
+            </ul>
+</li>
+        </ul>
+    </div>
+
+    </div>
+
+        <!-- Desktop Navigation -->
+        <div class="landing-nav hidden-xs">
+            <div class="landing-nav__section">
+                                    <a href="https://osu.ppy.sh/home" class="landing-nav__link landing-nav__link--bold">
+                        home
+                    </a>
+                                    <a href="https://osu.ppy.sh/beatmapsets" class="landing-nav__link ">
+                        beatmaps
+                    </a>
+                                    <a href="https://osu.ppy.sh/rankings/osu/performance" class="landing-nav__link ">
+                        rankings
+                    </a>
+                                    <a href="https://osu.ppy.sh/community/forums" class="landing-nav__link ">
+                        community
+                    </a>
+                                    <a href="https://osu.ppy.sh/store/listing" class="landing-nav__link ">
+                        store
+                    </a>
+                                    <a href="https://osu.ppy.sh/help/wiki/Main_Page" class="landing-nav__link ">
+                        help
+                    </a>
+                
+                <div class="landing-nav__locale-menu-link">
+                    <span class="landing-nav__link js-menu" data-menu-target="landing--locale">
+                        <img class="landing-nav__locale-flag" src="/images/flags/GB.png" alt="en">
+                        English
+                    </span>
+
+                    <div class="js-menu landing-nav__locale-menu" data-menu-id="landing--locale" data-visibility="hidden">
+                                                    <button type="button" class="landing-nav__locale-button">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/GB.png" alt="en">
+
+                                    English
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=be" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/BY.png" alt="be">
+
+                                    Беларуская мова
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=bg" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/BG.png" alt="bg">
+
+                                    Български
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=cs" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/CZ.png" alt="cs">
+
+                                    Česky
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=da" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/DK.png" alt="da">
+
+                                    Dansk
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=de" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/DE.png" alt="de">
+
+                                    Deutsch
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=el" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/GR.png" alt="el">
+
+                                    Ελληνικά
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=es" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/ES.png" alt="es">
+
+                                    Español
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=fi" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/FI.png" alt="fi">
+
+                                    Suomi
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=fr" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/FR.png" alt="fr">
+
+                                    Français
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=hu" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/HU.png" alt="hu">
+
+                                    Magyar
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=id" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/ID.png" alt="id">
+
+                                    Bahasa Indonesia
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=it" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/IT.png" alt="it">
+
+                                    Italiano
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=ja" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/JP.png" alt="ja">
+
+                                    日本語
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=ko" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/KR.png" alt="ko">
+
+                                    한국어
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=nl" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/NL.png" alt="nl">
+
+                                    Nederlands
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=no" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/NO.png" alt="no">
+
+                                    Norsk
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=pl" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/PL.png" alt="pl">
+
+                                    Polski
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=pt" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/PT.png" alt="pt">
+
+                                    Português
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=pt-br" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/BR.png" alt="pt-br">
+
+                                    Português (Brasil)
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=ro" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/RO.png" alt="ro">
+
+                                    Română
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=ru" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/RU.png" alt="ru">
+
+                                    Русский
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=sk" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/SK.png" alt="sk">
+
+                                    Slovenčina
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=sv" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/SE.png" alt="sv">
+
+                                    Svenska
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=th" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/TH.png" alt="th">
+
+                                    ไทย
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=tr" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/TR.png" alt="tr">
+
+                                    Türkçe
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=vi" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/VN.png" alt="vi">
+
+                                    Tiếng Việt
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=zh" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/CN.png" alt="zh">
+
+                                    简体中文
+                                </span>
+                            </button>
+                                                    <button type="button" class="landing-nav__locale-button" data-url="https://osu.ppy.sh/home/set-locale?locale=zh-tw" data-remote="1" data-method="POST">
+                                <span class="landing-nav__link landing-nav__link--locale">
+                                    <span class="landing-nav__locale-link-pointer">
+                                        <span class="fas fa-chevron-right"></span>
+                                    </span>
+
+                                    <img class="landing-nav__locale-flag" src="/images/flags/TW.png" alt="zh-tw">
+
+                                    繁體中文（台灣）
+                                </span>
+                            </button>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="landing-nav__section">
+                <a href="#" class="landing-nav__link js-nav-toggle js-click-menu js-user-login--menu" data-click-menu-target="nav2-login-box">
+                    Sign in
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="js-nav-data" id="nav-data-landing" data-turbolinks-permanent=""></div>
+    <div class="login-box login-box--landing">
+    <div class="login-box__content js-click-menu js-nav2--centered-popup js-nav2--login-box hidden" data-click-menu-id="nav2-login-box" data-visibility="hidden">
+        <form method="POST" action="https://osu.ppy.sh/session" accept-charset="UTF-8" class="
+                login-box__section
+                login-box__section--login
+                js-login-form
+                js-nav-popup--submenu
+            " data-remote=""><input name="_token" type="hidden" value="GqruBLdfgr8PaB4Gh5uPYcJO8kyhmcNakoWoqmQd">
+            <h2 class="login-box__row login-box__row--title">Sign In To Proceed</h2>
+
+            <div class="login-box__row login-box__row--inputs">
+                <input class="login-box__form-input js-login-form-input js-nav2--autofocus" name="username" placeholder="email address" required="">
+                <input class="login-box__form-input js-login-form-input" name="password" type="password" placeholder="password" required="">
+            </div>
+
+            <div class="login-box__row login-box__row--error js-login-form--error"></div>
+
+            <div class="login-box__row">
+                <a href="https://osu.ppy.sh/home/password-reset" class="login-box__link js-nav--hide">
+                    I've forgotten my details
+                </a>
+            </div>
+
+            <div class="login-box__row login-box__row--actions">
+                <div class="login-box__action">
+                    <button class="btn-osu-big btn-osu-big--nav-popup" data-disable-with="Signing in...">
+                        <div class="btn-osu-big__content">
+                            <span class="btn-osu-big__left">
+                                Sign in
+                            </span>
+
+                            <span class="fas fa-fw fa-sign-in-alt"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="login-box__section login-box__section--register">
+            <h2 class="login-box__row login-box__row--title">
+                Don't have an account?
+            </h2>
+
+            <div class="login-box__row">
+                Download osu! to create your own account!
+            </div>
+
+            <div class="login-box__row login-box__row--actions">
+                <div class="login-box__action">
+                    <a href="https://osu.ppy.sh/home/download" class="btn-osu-big btn-osu-big--nav-popup">
+                        <div class="btn-osu-big__content">
+                            <span class="btn-osu-big__left">
+                                Download
+                            </span>
+
+                            <span class="fas fa-fw fa-download"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="osu-page">
+        <div class="landing-hero">
+            <div class="landing-hero__bg-container">
+                <div class="landing-hero__bg-inner-container js-scale" data-scale="ws" style="height: 562.5px; width: 1000px;">
+                    
+                    <video class="landing-hero__bg js-autoplay" autoplay="" loop="" muted="" playsinline="" src="https://assets.ppy.sh/media/landing.mp4"></video>
+                </div>
+            </div>
+
+            <div class="landing-hero__pippi">
+                <div class="landing-hero__pippi-logo"></div>
+            </div>
+
+            <div class="landing-hero__info">
+                <strong>15,210,892</strong> registered players,
+                <strong>15,349</strong> currently online in <strong>512</strong> games
+            </div>
+
+            <div class="landing-hero__messages">
+                <div class="landing-hero__message-extra-container">
+                    <div class="landing-hero__message-extra landing-hero__message-extra--top">
+                        <div class="landing-hero__logo"></div>
+                    </div>
+                </div>
+
+                <div class="landing-hero__slogan">
+                    <h1 class="landing-hero__slogan-main">
+                        the bestest free-to-win rhythm game
+                    </h1>
+
+                    <h2 class="landing-hero__slogan-sub">
+                        rhythm is just a click away
+                    </h2>
+                </div>
+
+                <div class="landing-hero__message-extra-container">
+                    <div class="landing-hero__message-extra landing-hero__message-extra--bottom">
+                        <a href="https://osu.ppy.sh/home/download" class="btn-osu-big btn-osu-big--download-landing">
+                            <span class="btn-osu-big__content">
+                                <span class="btn-osu-big__left">
+                                    <span class="btn-osu-big__text-top">
+                                        Download now
+                                    </span>
+                                </span>
+
+                                <span class="btn-osu-big__icon">
+                                    <span class="fas fa-download"></span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="landing-hero__graph js-landing-graph"><svg class="landing-graph" width="1000" height="70"><g transform="translate(0, 41)"><path class="landing-graph__area" d="M0,2.511723879197149L1.1655011655011656,2.5001563183892954C2.331002331002331,2.4885887575814416,4.662004662004662,2.465453635965735,6.993006993006993,2.447320702807478C9.324009324009324,2.4291877696492215,11.655011655011656,2.4160570249484152,13.986013986013987,2.3722878759457267C16.317016317016318,2.328518726943038,18.64801864801865,2.254111173638467,20.97902097902098,2.211905208528732C23.31002331002331,2.1696992434189966,25.641025641025646,2.159694866504097,27.972027972027973,2.1224910898518115C30.3030303030303,2.085287313199526,32.634032634032636,2.0208841368098547,34.96503496503497,1.898643156380917C37.2960372960373,1.7764021759519792,39.62703962703963,1.5963233914837751,41.95804195804196,1.5025323579065855C44.28904428904429,1.4087413243293956,46.62004662004662,1.4012380416432204,48.95104895104895,1.3652848121052976C51.28205128205129,1.3293315825673748,53.613053613053616,1.2649284061777049,55.94405594405595,1.2074032389170284C58.27505827505828,1.149878071656352,60.6060606060606,1.099230913524669,62.93706293706294,1.0251359969986886C65.26806526806527,0.9510410804727082,67.5990675990676,0.8534984055524303,69.93006993006993,0.7668980178828241C72.26107226107227,0.680297630213218,74.5920745920746,0.6046395297942837,76.92307692307692,0.5983867942224705C79.25407925407926,0.5921340586506574,81.5850815850816,0.6552866879259653,83.9160839160839,0.6756080785343569C86.24708624708626,0.6959294691427486,88.57808857808857,0.6734196210842237,90.90909090909092,0.6130807228162318C93.24009324009324,0.55274182454824,95.57109557109557,0.45457387607078087,97.9020979020979,0.3595322953792284C100.23310023310023,0.2644907146876759,102.56410256410255,0.17257550178203,104.8951048951049,0.12161570687175664C107.22610722610723,0.07065591196148328,109.55710955710957,0.06065153504658246,111.8881118881119,0.04720815356718511C114.21911421911422,0.033764772087787755,116.55011655011656,0.016882386043893877,118.88111888111888,0.05596198336772318C121.2121212121212,0.09504158069155248,123.54312354312356,0.19008316138310496,125.87412587412587,0.20852873131995212C128.2051282051282,0.2269743012567993,130.5361305361305,0.16882386043894115,132.86713286713285,0.18758206715437944C135.1981351981352,0.20634027386981776,137.52913752913753,0.3020071281185525,139.86013986013987,0.39517288813856116C142.19114219114218,0.4883386481585698,144.52214452214454,0.5790033139498524,146.85314685314685,0.6418433064465692C149.1841491841492,0.704683298943286,151.51515151515153,0.7396986181454371,153.84615384615387,0.7640842868755063C156.1771561771562,0.7884699556055755,158.50815850815852,0.8022259738635628,160.83916083916085,0.9466641655724354C163.17016317016316,1.0911023572813079,165.5011655011655,1.3662227224410657,167.83216783216784,1.5609954355030304C170.16317016317018,1.7557681485649954,172.49417249417252,1.8701932095291671,174.82517482517483,1.9777402613643453C177.15617715617714,2.0852873131995238,179.48717948717947,2.185956355905708,181.81818181818184,2.2878759457262547C184.14918414918415,2.3897955355468015,186.48018648018646,2.4929656724817106,188.8111888111888,2.5923841680735316C191.14219114219114,2.691802663665353,193.47319347319345,2.7874695179140865,195.8041958041958,2.963796661039204C198.13519813519815,3.140123804164322,200.46620046620046,3.3971112361658236,202.79720279720277,3.70599637341337C205.1282051282051,4.014881510660916,207.45920745920748,4.375664353154506,209.79020979020981,4.680172575501783C212.12121212121212,4.984680797849059,214.45221445221443,5.232914400050021,216.78321678321677,5.457387607078096C219.11421911421908,5.68186081410617,221.44522144522145,5.882573625961359,223.7762237762238,6.072031513787283C226.1072261072261,6.261489401613208,228.43822843822844,6.439692365409869,230.7692307692308,6.571625085975115C233.1002331002331,6.7035578065403625,235.43123543123542,6.789220283874195,237.76223776223776,6.919277183767899C240.0932400932401,7.049334083661601,242.4242424242424,7.223785406115174,244.75524475524477,7.433252047770899C247.0862470862471,7.642718689426623,249.41724941724942,7.887200650284498,251.74825174825173,8.05571187394485C254.07925407925413,8.224223097605202,256.4102564102564,8.31676358406803,258.7412587412587,8.377727755893204C261.0722610722611,8.438691927718377,263.4032634032634,8.468079784905896,265.7342657342657,8.537485149753017C268.06526806526807,8.606890514600137,270.3962703962704,8.71631338710686,272.7272727272727,8.859188394922779C275.05827505827506,9.002063402738699,277.38927738927737,9.178390545863817,279.72027972027973,9.356280872881888C282.05128205128204,9.534171199899957,284.38228438228435,9.713624710810981,286.7132867132867,9.889951853936097C289.0442890442891,10.066278997061213,291.3752913752914,10.239479772400424,293.7062937062937,10.380791596323391C296.037296037296,10.522103420246356,298.3682983682984,10.63152629275308,300.6993006993007,10.722503595322955C303.03030303030306,10.81348089789283,305.36130536130537,10.886012630525855,307.6923076923077,10.910085662477336C310.02331002331005,10.934158694428811,312.35431235431236,10.909773025698746,314.68531468531467,10.915087850934784C317.01631701631703,10.920402676170825,319.34731934731934,10.955417995372978,321.67832167832165,10.96698555618083C324.00932400932396,10.978553116988683,326.3403263403263,10.96667291940224,328.67132867132864,10.981366847996C331.002331002331,10.996060776589758,333.3333333333333,11.037328831363723,335.6643356643357,11.064215594322514C337.99533799533805,11.09110235728131,340.32634032634036,11.103607828424936,342.65734265734267,11.094228725067216C344.98834498834503,11.084849621709497,347.31934731934734,11.053585943850434,349.65034965034965,11.042643656599763C351.98135198135196,11.031701369349088,354.31235431235433,11.04108047270681,356.64335664335664,11.028262364784593C358.97435897435906,11.015444256862375,361.3053613053614,10.980428937660227,363.63636363636357,10.961358094166195C365.967365967366,10.942287250672166,368.2983682983683,10.939160882886261,370.6293706293706,10.949790533358344C372.9603729603729,10.960420183830427,375.2913752913753,10.984805852560493,377.6223776223776,11.002313512161571C379.95337995337997,11.019821171762645,382.2843822843823,11.030450822234727,384.6153846153846,11.031076095791908C386.946386946387,11.031701369349092,389.2773892773893,11.022322265991372,391.6083916083916,11.009191521290566C393.939393939394,10.996060776589758,396.2703962703963,10.979178390545863,398.6013986013986,10.979178390545863C400.9324009324009,10.979178390545863,403.26340326340323,10.996060776589758,405.59440559440554,11.022322265991372C407.92540792540785,11.048583755392984,410.2564102564102,11.084224348152317,412.58741258741253,11.10548364909648C414.91841491841495,11.126742950040642,417.24941724941726,11.133620959169635,419.5804195804196,11.158944538235476C421.9114219114219,11.18426811730132,424.24242424242425,11.228037266304007,426.57342657342656,11.275558056649784C428.90442890442887,11.323078846995562,431.23543123543124,11.374351278684424,433.56643356643355,11.434064903395237C435.89743589743586,11.493778528106048,438.2284382284383,11.561933345838804,440.5594405594406,11.630713437128742C442.89044289044296,11.69949352841868,445.22144522144526,11.768898893265805,447.5524475524476,11.863627837178763C449.8834498834499,11.958356781091728,452.2144522144522,12.078409304070533,454.5454545454545,12.20127555805665C456.8764568764568,12.324141812042768,459.2074592074592,12.449821797036202,461.5384615384615,12.550803476520977C463.8694638694639,12.651785156005753,466.2004662004662,12.728068529981869,468.53146853146853,12.81404364409429C470.86247086247084,12.900018758206718,473.1934731934732,12.995685612455452,475.5244755244755,13.053210779716125C477.85547785547783,13.110735946976803,480.1864801864802,13.13011942724942,482.5174825174825,13.16857375101607C484.8484848484848,13.207028074782718,487.17948717948724,13.264553242043396,489.51048951048955,13.314887763396486C491.8414918414919,13.365222284749578,494.1724941724942,13.408366160195087,496.50349650349654,13.48558744450697C498.83449883449885,13.562808728818858,501.16550116550115,13.674107421997126,503.49650349650346,13.809166510348279C505.82750582750583,13.944225598699433,508.15850815850814,14.103045082223474,510.48951048951056,14.195585568686303C512.8205128205128,14.288126055149128,515.1515151515151,14.31438754455074,517.4825174825174,14.355968236103294C519.8135198135199,14.39754892765585,522.1445221445222,14.454448821359344,524.4755244755244,14.520415181641967C526.8065268065268,14.58638154192459,529.1375291375291,14.661414368786344,531.4685314685314,14.723003814168699C533.7995337995338,14.784593259551054,536.1305361305361,14.832739323454012,538.4615384615385,14.901832051522542C540.7925407925408,14.970924779591073,543.1235431235431,15.060964171825175,545.4545454545454,15.125054711436254C547.7855477855477,15.189145251047334,550.1165501165501,15.227286938035391,552.4475524475524,15.228850121928344C554.7785547785547,15.230413305821296,557.1095571095572,15.195397986619147,559.4405594405595,15.229162758706934C561.7715617715618,15.262927530794721,564.1025641025641,15.36547239417245,566.4335664335664,15.444256862377289C568.7645687645688,15.52304133058213,571.0955710955711,15.578065403614081,573.4265734265736,15.630275745638718C575.7575757575758,15.682486087663355,578.0885780885781,15.731882698680673,580.4195804195805,15.78972050271994C582.7505827505828,15.847558306759206,585.0815850815851,15.91383730382042,587.4125874125874,15.997936597261301C589.7435897435897,16.082035890702183,592.074592074592,16.183955480522727,594.4055944055943,16.25523666604139C596.7365967365967,16.326517851560055,599.0675990675991,16.36716063277684,601.3986013986014,16.408741324329394C603.7296037296037,16.450322015881948,606.0606060606061,16.492840617770273,608.3916083916084,16.520352654286253C610.7226107226107,16.54786469080223,613.053613053613,16.56037016194585,615.3846153846154,16.554117426374038C617.7156177156178,16.547864690802225,620.0466200466201,16.522853748514976,622.3776223776223,16.52973175764397C624.7086247086247,16.536609766772962,627.039627039627,16.5753767273182,629.3706293706293,16.592884386919277C631.7016317016318,16.610392046520353,634.0326340326341,16.606640405177266,636.3636363636364,16.596010754705187C638.6946386946387,16.585381104233104,641.025641025641,16.567873444632024,643.3566433566433,16.54004877133746C645.6876456876456,16.512224098042893,648.018648018648,16.474082411054837,650.3496503496503,16.44563246420309C652.6806526806527,16.417182517351343,655.011655011655,16.398424310635903,657.3426573426573,16.34871506283999C659.6736596736597,16.29900581504408,662.004662004662,16.2183455261677,664.3356643356643,16.15019070843494C666.6666666666667,16.082035890702183,668.997668997669,16.02638654411305,671.3286713286715,15.959794910273246C673.6596736596737,15.89320327643344,675.990675990676,15.815669355342962,678.3216783216784,15.697180016257112C680.6526806526807,15.578690677171261,682.983682983683,15.41924592009004,685.3146853146853,15.257300068780092C687.6456876456876,15.095354217470144,689.97668997669,14.930907271931469,692.3076923076924,14.803351466266491C694.6386946386947,14.675795660601514,696.969696969697,14.585130994810228,699.3006993006993,14.51228662539861C701.6317016317016,14.439442255986995,703.9627039627039,14.384418182955043,706.2937062937062,14.32439192146564C708.6247086247085,14.26436565997624,710.955710955711,14.19933721002939,713.2867132867133,14.09147752141562C715.6177156177158,13.98361783280185,717.9487179487181,13.832926905521168,720.2797202797202,13.698805727505784C722.6107226107227,13.564684549490403,724.941724941725,13.447133120740324,727.2727272727271,13.34646407803414C729.6037296037297,13.245795035327957,731.934731934732,13.162008378665666,734.2657342657343,13.074782717438879C736.5967365967366,12.987557056212092,738.9277389277389,12.89689239042081,741.2587412587412,12.780904145563683C743.5897435897435,12.66491590070656,745.920745920746,12.523604076783593,748.2517482517483,12.360720315137874C750.5827505827506,12.197836553492152,752.9137529137529,12.013380854123676,755.2447552447552,11.889576689801787C757.5757575757575,11.765772525479898,759.9067599067599,11.70261989620459,762.2377622377622,11.626336522228476C764.5687645687645,11.550053148252362,766.8997668997669,11.460639029575441,769.2307692307692,11.379978740699059C771.5617715617715,11.299318451822673,773.8927738927738,11.227411992746829,776.2237762237763,11.126117676483462C778.5547785547786,11.024823360220097,780.885780885781,10.894141186769213,783.2167832167833,10.780654036140811C785.5477855477856,10.667166885512414,787.8787878787879,10.570874757706497,790.2097902097903,10.43956731069843C792.5407925407926,10.308259863690365,794.8717948717949,10.141937097480147,797.2027972027972,9.998124179328457C799.5337995337995,9.854311261176765,801.8648018648018,9.733008191083599,804.1958041958042,9.582629900581503C806.5268065268065,9.43225161007941,808.8578088578088,9.252798099168386,811.1888111888111,9.078346776714813C813.5198135198134,8.903895454261239,815.8508158508158,8.734446320265114,818.1818181818181,8.57406365284812C820.5128205128207,8.413680985431123,822.843822843823,8.262364784593258,825.1748251748251,8.087600825361093C827.5058275058276,7.912836866128931,829.8368298368299,7.714625148502471,832.1678321678322,7.503595322953792C834.4988344988345,7.292565497405115,836.8298368298368,7.068717563934221,839.1608391608391,6.839554805227286C841.4918414918415,6.61039204652035,843.8228438228439,6.375914462577376,846.1538461538461,6.167385731257423C848.4848484848485,5.958856999937471,850.8158508158508,5.776277121240542,853.146853146853,5.573688488713812C855.4778554778554,5.371099856187082,857.8088578088577,5.148502469830551,860.13986013986,4.9809291565059715C862.4708624708624,4.813355843181392,864.8018648018648,4.700806602888764,867.1328671328671,4.557931595072844C869.4638694638694,4.415056587256925,871.7948717948717,4.241855811917715,874.1258741258742,4.06115175389233C876.4568764568766,3.8804476958669434,878.7878787878789,3.692240355155382,881.1188811188812,3.498718189207779C883.4498834498835,3.3051960232601765,885.7808857808858,3.106359032076533,888.1118881118881,2.9606702932532976C890.4428904428905,2.8149815544300623,892.7738927738928,2.7224410679672353,895.1048951048951,2.6621021696992435C897.4358974358975,2.6017632714312513,899.7668997668998,2.5736259613580947,902.0979020979021,2.5101606953041955C904.4289044289044,2.4466954292502963,906.7599067599067,2.3479022072156552,909.090909090909,2.2619270931032305C911.4219114219113,2.175951978990806,913.7529137529136,2.1027949728005986,916.083916083916,2.0587131870193196C918.4149184149184,2.01463140123804,920.7459207459207,1.9996248358656896,923.076923076923,1.9505408616269608C925.4079254079255,1.9014568873882318,927.7389277389278,1.8182955042831246,930.0699300699301,1.7451384980929163C932.4009324009324,1.6719814919027083,934.7319347319348,1.608828862627399,937.0629370629371,1.6116425936347145C939.3939393939394,1.61445632464203,941.7249417249418,1.68323641593197,944.055944055944,1.6963671606327768C946.3869463869464,1.7094979053335837,948.7179487179487,1.6669793034452571,951.0489510489512,1.6172700556493467C953.3799533799533,1.567560807853436,955.7109557109557,1.5106609141499412,958.0419580419581,1.4637653973613467C960.3729603729603,1.416869880572752,962.7039627039627,1.3799787406990578,965.034965034965,1.3543425248546257C967.3659673659673,1.3287063090101938,969.6969696969696,1.3143250171950243,972.0279720279719,1.3302694929031464C974.3589743589743,1.3462139686112689,976.6899766899768,1.3924842118426828,979.0209790209791,1.4084286875508052C981.3519813519814,1.4243731632589274,983.6829836829837,1.4099918714437578,986.013986013986,1.3831051084849626C988.3449883449885,1.3562183455261672,990.6759906759908,1.3168261114237463,993.0069930069931,1.2855624335646827C995.3379953379954,1.2542987557056193,997.6689976689977,1.2311636340899135,998.8344988344988,1.2195960732820605L1000,1.2080285124742076L1000,30L998.8344988344988,30C997.6689976689977,30,995.3379953379954,30,993.0069930069931,30C990.6759906759908,30,988.3449883449885,30,986.0139860139861,30C983.6829836829837,30,981.3519813519814,30,979.0209790209791,30C976.6899766899768,30,974.3589743589743,30,972.0279720279719,30C969.6969696969696,30,967.3659673659673,30,965.034965034965,30C962.7039627039627,30,960.3729603729603,30,958.0419580419581,30C955.7109557109557,30,953.3799533799533,30,951.0489510489512,30C948.7179487179487,30,946.3869463869464,30,944.0559440559441,30C941.7249417249418,30,939.3939393939394,30,937.0629370629371,30C934.7319347319348,30,932.4009324009324,30,930.0699300699301,30C927.7389277389278,30,925.4079254079255,30,923.076923076923,30C920.7459207459207,30,918.4149184149184,30,916.083916083916,30C913.7529137529136,30,911.4219114219113,30,909.090909090909,30C906.7599067599067,30,904.4289044289044,30,902.0979020979021,30C899.7668997668998,30,897.4358974358975,30,895.1048951048951,30C892.7738927738928,30,890.4428904428905,30,888.1118881118881,30C885.7808857808858,30,883.4498834498835,30,881.1188811188812,30C878.7878787878789,30,876.4568764568766,30,874.1258741258742,30C871.7948717948717,30,869.4638694638694,30,867.1328671328671,30C864.8018648018648,30,862.4708624708624,30,860.1398601398602,30C857.8088578088577,30,855.4778554778554,30,853.146853146853,30C850.8158508158508,30,848.4848484848485,30,846.1538461538461,30C843.8228438228439,30,841.4918414918415,30,839.1608391608391,30C836.8298368298368,30,834.4988344988345,30,832.1678321678322,30C829.8368298368299,30,827.5058275058276,30,825.1748251748251,30C822.843822843823,30,820.5128205128207,30,818.1818181818181,30C815.8508158508158,30,813.5198135198134,30,811.1888111888111,30C808.8578088578088,30,806.5268065268065,30,804.1958041958042,30C801.8648018648018,30,799.5337995337995,30,797.2027972027972,30C794.8717948717949,30,792.5407925407926,30,790.2097902097902,30C787.8787878787879,30,785.5477855477856,30,783.2167832167833,30C780.885780885781,30,778.5547785547786,30,776.2237762237763,30C773.8927738927738,30,771.5617715617715,30,769.2307692307694,30C766.8997668997669,30,764.5687645687645,30,762.2377622377622,30C759.9067599067599,30,757.5757575757575,30,755.2447552447552,30C752.9137529137529,30,750.5827505827506,30,748.2517482517483,30C745.920745920746,30,743.5897435897435,30,741.2587412587412,30C738.9277389277389,30,736.5967365967366,30,734.2657342657343,30C731.934731934732,30,729.6037296037297,30,727.2727272727274,30C724.941724941725,30,722.6107226107227,30,720.2797202797202,30C717.9487179487181,30,715.6177156177158,30,713.2867132867133,30C710.955710955711,30,708.6247086247085,30,706.2937062937062,30C703.9627039627039,30,701.6317016317016,30,699.3006993006993,30C696.969696969697,30,694.6386946386947,30,692.3076923076923,30C689.97668997669,30,687.6456876456876,30,685.3146853146853,30C682.983682983683,30,680.6526806526807,30,678.3216783216784,30C675.990675990676,30,673.6596736596737,30,671.3286713286715,30C668.997668997669,30,666.6666666666667,30,664.3356643356644,30C662.004662004662,30,659.6736596736597,30,657.3426573426574,30C655.011655011655,30,652.6806526806527,30,650.3496503496503,30C648.018648018648,30,645.6876456876456,30,643.3566433566433,30C641.025641025641,30,638.6946386946387,30,636.3636363636364,30C634.0326340326341,30,631.7016317016318,30,629.3706293706294,30C627.039627039627,30,624.7086247086247,30,622.3776223776223,30C620.0466200466201,30,617.7156177156178,30,615.3846153846154,30C613.053613053613,30,610.7226107226107,30,608.3916083916084,30C606.0606060606061,30,603.7296037296037,30,601.3986013986014,30C599.0675990675991,30,596.7365967365967,30,594.4055944055943,30C592.074592074592,30,589.7435897435897,30,587.4125874125874,30C585.0815850815851,30,582.7505827505828,30,580.4195804195805,30C578.0885780885781,30,575.7575757575758,30,573.4265734265736,30C571.0955710955711,30,568.7645687645688,30,566.4335664335665,30C564.1025641025641,30,561.7715617715618,30,559.4405594405595,30C557.1095571095572,30,554.7785547785547,30,552.4475524475524,30C550.1165501165501,30,547.7855477855477,30,545.4545454545454,30C543.1235431235431,30,540.7925407925408,30,538.4615384615385,30C536.1305361305361,30,533.7995337995338,30,531.4685314685315,30C529.1375291375291,30,526.8065268065268,30,524.4755244755244,30C522.1445221445222,30,519.8135198135199,30,517.4825174825174,30C515.1515151515151,30,512.8205128205128,30,510.48951048951056,30C508.15850815850814,30,505.82750582750583,30,503.4965034965035,30C501.16550116550115,30,498.83449883449885,30,496.50349650349654,30C494.1724941724942,30,491.8414918414919,30,489.5104895104896,30C487.17948717948724,30,484.8484848484848,30,482.5174825174825,30C480.1864801864802,30,477.85547785547783,30,475.5244755244755,30C473.1934731934732,30,470.86247086247084,30,468.53146853146853,30C466.2004662004662,30,463.8694638694639,30,461.5384615384615,30C459.2074592074592,30,456.8764568764568,30,454.5454545454545,30C452.2144522144522,30,449.8834498834499,30,447.5524475524476,30C445.22144522144526,30,442.89044289044296,30,440.5594405594406,30C438.2284382284383,30,435.89743589743586,30,433.56643356643355,30C431.23543123543124,30,428.90442890442887,30,426.57342657342656,30C424.24242424242425,30,421.9114219114219,30,419.5804195804196,30C417.24941724941726,30,414.91841491841495,30,412.58741258741253,30C410.2564102564102,30,407.92540792540785,30,405.59440559440554,30C403.26340326340323,30,400.9324009324009,30,398.6013986013986,30C396.2703962703963,30,393.939393939394,30,391.6083916083916,30C389.2773892773893,30,386.946386946387,30,384.6153846153846,30C382.2843822843823,30,379.95337995337997,30,377.6223776223776,30C375.2913752913753,30,372.9603729603729,30,370.6293706293706,30C368.2983682983683,30,365.967365967366,30,363.6363636363637,30C361.3053613053614,30,358.97435897435906,30,356.64335664335664,30C354.31235431235433,30,351.98135198135196,30,349.65034965034965,30C347.31934731934734,30,344.98834498834503,30,342.65734265734267,30C340.32634032634036,30,337.99533799533805,30,335.6643356643357,30C333.3333333333333,30,331.002331002331,30,328.6713286713287,30C326.3403263403263,30,324.00932400932396,30,321.67832167832165,30C319.34731934731934,30,317.01631701631703,30,314.6853146853147,30C312.35431235431236,30,310.02331002331005,30,307.6923076923077,30C305.36130536130537,30,303.03030303030306,30,300.6993006993007,30C298.3682983682984,30,296.037296037296,30,293.7062937062937,30C291.3752913752914,30,289.0442890442891,30,286.7132867132867,30C284.38228438228435,30,282.05128205128204,30,279.72027972027973,30C277.38927738927737,30,275.05827505827506,30,272.7272727272727,30C270.3962703962704,30,268.06526806526807,30,265.73426573426576,30C263.4032634032634,30,261.0722610722611,30,258.7412587412587,30C256.4102564102564,30,254.07925407925413,30,251.74825174825176,30C249.41724941724942,30,247.0862470862471,30,244.7552447552448,30C242.4242424242424,30,240.0932400932401,30,237.76223776223776,30C235.43123543123542,30,233.1002331002331,30,230.76923076923075,30C228.43822843822844,30,226.1072261072261,30,223.7762237762238,30C221.44522144522145,30,219.11421911421908,30,216.78321678321677,30C214.45221445221443,30,212.12121212121212,30,209.7902097902098,30C207.45920745920748,30,205.1282051282051,30,202.79720279720277,30C200.46620046620046,30,198.13519813519815,30,195.8041958041958,30C193.47319347319345,30,191.14219114219114,30,188.8111888111888,30C186.48018648018646,30,184.14918414918415,30,181.81818181818184,30C179.48717948717947,30,177.15617715617714,30,174.82517482517483,30C172.49417249417252,30,170.16317016317018,30,167.83216783216784,30C165.5011655011655,30,163.17016317016316,30,160.83916083916083,30C158.50815850815852,30,156.1771561771562,30,153.84615384615387,30C151.51515151515153,30,149.1841491841492,30,146.85314685314685,30C144.52214452214454,30,142.19114219114218,30,139.86013986013987,30C137.52913752913753,30,135.1981351981352,30,132.86713286713285,30C130.5361305361305,30,128.2051282051282,30,125.87412587412587,30C123.54312354312356,30,121.2121212121212,30,118.88111888111888,30C116.55011655011656,30,114.21911421911422,30,111.8881118881119,30C109.55710955710957,30,107.22610722610723,30,104.8951048951049,30C102.56410256410255,30,100.23310023310023,30,97.9020979020979,30C95.57109557109557,30,93.24009324009324,30,90.90909090909092,30C88.57808857808857,30,86.24708624708626,30,83.9160839160839,30C81.5850815850816,30,79.25407925407926,30,76.92307692307693,30C74.5920745920746,30,72.26107226107227,30,69.93006993006993,30C67.5990675990676,30,65.26806526806527,30,62.93706293706294,30C60.6060606060606,30,58.27505827505828,30,55.94405594405595,30C53.613053613053616,30,51.28205128205129,30,48.95104895104895,30C46.62004662004662,30,44.28904428904429,30,41.95804195804196,30C39.62703962703963,30,37.2960372960373,30,34.96503496503497,30C32.634032634032636,30,30.3030303030303,30,27.972027972027973,30C25.641025641025646,30,23.31002331002331,30,20.97902097902098,30C18.64801864801865,30,16.317016317016318,30,13.986013986013987,30C11.655011655011656,30,9.324009324009324,30,6.993006993006993,30C4.662004662004662,30,2.331002331002331,30,1.1655011655011656,30L0,30Z"></path><text class="landing-graph__text" y="-10" x="128.88111888111888">Peak, 15,993 online users</text><circle class="landing-graph__circle" cy="0" r="5" cx="118.88111888111888"></circle></g></svg></div>
+
+            <script id="json-stats" type="application/json">
+                [{"x":0,"y":14654},{"x":1,"y":14691},{"x":2,"y":14712},{"x":3,"y":14831},{"x":4,"y":14847},{"x":5,"y":14950},{"x":6,"y":15238},{"x":7,"y":15250},{"x":8,"y":15353},{"x":9,"y":15434},{"x":10,"y":15590},{"x":11,"y":15711},{"x":12,"y":15610},{"x":13,"y":15646},{"x":14,"y":15803},{"x":15,"y":15950},{"x":16,"y":15966},{"x":17,"y":15993},{"x":18,"y":15841},{"x":19,"y":15934},{"x":20,"y":15781},{"x":21,"y":15636},{"x":22,"y":15580},{"x":23,"y":15558},{"x":24,"y":15118},{"x":25,"y":14935},{"x":26,"y":14774},{"x":27,"y":14609},{"x":28,"y":14456},{"x":29,"y":14045},{"x":30,"y":13468},{"x":31,"y":13071},{"x":32,"y":12750},{"x":33,"y":12465},{"x":34,"y":12328},{"x":35,"y":12049},{"x":36,"y":11658},{"x":37,"y":11510},{"x":38,"y":11463},{"x":39,"y":11288},{"x":40,"y":11006},{"x":41,"y":10719},{"x":42,"y":10442},{"x":43,"y":10267},{"x":44,"y":10151},{"x":45,"y":10190},{"x":46,"y":10134},{"x":47,"y":10153},{"x":48,"y":10087},{"x":49,"y":10067},{"x":50,"y":10117},{"x":51,"y":10102},{"x":52,"y":10158},{"x":53,"y":10163},{"x":54,"y":10124},{"x":55,"y":10107},{"x":56,"y":10122},{"x":57,"y":10149},{"x":58,"y":10122},{"x":59,"y":10065},{"x":60,"y":10054},{"x":61,"y":9984},{"x":62,"y":9902},{"x":63,"y":9793},{"x":64,"y":9682},{"x":65,"y":9490},{"x":66,"y":9289},{"x":67,"y":9167},{"x":68,"y":9014},{"x":69,"y":8983},{"x":70,"y":8891},{"x":71,"y":8822},{"x":72,"y":8644},{"x":73,"y":8390},{"x":74,"y":8348},{"x":75,"y":8257},{"x":76,"y":8137},{"x":77,"y":8060},{"x":78,"y":7916},{"x":79,"y":7855},{"x":80,"y":7911},{"x":81,"y":7747},{"x":82,"y":7659},{"x":83,"y":7580},{"x":84,"y":7474},{"x":85,"y":7311},{"x":86,"y":7246},{"x":87,"y":7178},{"x":88,"y":7158},{"x":89,"y":7198},{"x":90,"y":7136},{"x":91,"y":7142},{"x":92,"y":7170},{"x":93,"y":7231},{"x":94,"y":7261},{"x":95,"y":7390},{"x":96,"y":7479},{"x":97,"y":7603},{"x":98,"y":7858},{"x":99,"y":8121},{"x":100,"y":8266},{"x":101,"y":8354},{"x":102,"y":8458},{"x":103,"y":8699},{"x":104,"y":8887},{"x":105,"y":9021},{"x":106,"y":9166},{"x":107,"y":9392},{"x":108,"y":9687},{"x":109,"y":9788},{"x":110,"y":9931},{"x":111,"y":10046},{"x":112,"y":10255},{"x":113,"y":10409},{"x":114,"y":10675},{"x":115,"y":10869},{"x":116,"y":11156},{"x":117,"y":11427},{"x":118,"y":11669},{"x":119,"y":11986},{"x":120,"y":12344},{"x":121,"y":12719},{"x":122,"y":13011},{"x":123,"y":13367},{"x":124,"y":13547},{"x":125,"y":13824},{"x":126,"y":14125},{"x":127,"y":14443},{"x":128,"y":14591},{"x":129,"y":14636},{"x":130,"y":14794},{"x":131,"y":14911},{"x":132,"y":14935},{"x":133,"y":15068},{"x":134,"y":15169},{"x":135,"y":15059},{"x":136,"y":15127},{"x":137,"y":15218},{"x":138,"y":15277},{"x":139,"y":15300},{"x":140,"y":15226},{"x":141,"y":15249},{"x":142,"y":15312},{"x":143,"y":15349}]
+            </script>
+        </div>
+    </div>
+
+    <div class="osu-page js-react--landing-news" data-react-turbolinks-loaded="1"><div class="landing-news"><div class="landing-news__posts"><a href="https://osu.ppy.sh/home/news/2019-11-19-osu-idol-2019-finals-community-voting" class="news-card news-card--landing news-card--hover"><img class="news-card__cover" src="/help/wiki/shared/news/2019-11-19-osu-idol-2019-finals-community-voting/banner.jpg"><div class="news-card__overlay"></div><div class="news-card__content"><div class="news-card__time js-tooltip-time" title="2019-11-19T22:20:00+00:00">19 Nov 2019</div><div class="news-card__main"><div class="news-card__title">osu!idol 2019 Finals: Community Voting</div><div class="news-card__preview"></div></div></div></a><a href="https://osu.ppy.sh/home/news/2019-11-13-new-featured-artist-panda-eyes" class="news-card news-card--landing news-card--hover"><img class="news-card__cover" src="https://assets.ppy.sh/artists/55/header.jpg"><div class="news-card__overlay"></div><div class="news-card__content"><div class="news-card__time js-tooltip-time" title="2019-11-13T16:00:00+00:00">13 Nov 2019</div><div class="news-card__main"><div class="news-card__title">New Featured Artist: Panda Eyes</div><div class="news-card__preview"></div></div></div></a><a href="https://osu.ppy.sh/home/news/2019-11-12-project-loved-week-of-november-10th" class="news-card news-card--landing news-card--hover"><img class="news-card__cover" src="/help/wiki/shared/news/banners/project-loved.jpg"><div class="news-card__overlay"></div><div class="news-card__content"><div class="news-card__time js-tooltip-time" title="2019-11-12T22:00:00+00:00">12 Nov 2019</div><div class="news-card__main"><div class="news-card__title">Project Loved: Week of November 10th</div><div class="news-card__preview"></div></div></div></a><a href="https://osu.ppy.sh/home/news/2019-11-12-winter-2019-fanart-contest" class="news-card news-card--landing news-card--hover"><img class="news-card__cover" src="https://assets.ppy.sh/contests/82/header.jpg"><div class="news-card__overlay"></div><div class="news-card__content"><div class="news-card__time js-tooltip-time" title="2019-11-12T09:45:00+00:00">12 Nov 2019</div><div class="news-card__main"><div class="news-card__title">Winter 2019 Fanart Contest</div><div class="news-card__preview"></div></div></div></a></div><div class="landing-news__link"><a type="button" href="https://osu.ppy.sh/home/news" class="show-more-link"><span class="show-more-link__spinner"><div class="la-ball-clip-rotate"></div></span><span class="show-more-link__label"><span class="show-more-link__label-text">see more news</span></span></a></div></div></div>
+
+    <footer class="osu-layout__section osu-layout__section--landing-footer">
+        <div class="osu-layout__row osu-layout__row--landing-sitemap landing-sitemap">
+            <div class="osu-layout__col-container osu-layout__col-container--landing-sitemap">
+                                    <div class="osu-layout__col osu-layout__col--sm-4">
+                        <ul class="landing-sitemap__list">
+                            <li class="landing-sitemap__item">
+                                <div class="landing-sitemap__header">General</div>
+                            </li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/home" class="landing-sitemap__link">Home</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/home/changelog" class="landing-sitemap__link">Changelog</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/beatmapsets" class="landing-sitemap__link">Beatmap Listing</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/home/download" class="landing-sitemap__link">Download osu!</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/help/wiki/Main_Page" class="landing-sitemap__link">Wiki</a></li>
+                                                    </ul>
+                    </div>
+                                    <div class="osu-layout__col osu-layout__col--sm-4">
+                        <ul class="landing-sitemap__list">
+                            <li class="landing-sitemap__item">
+                                <div class="landing-sitemap__header">Help &amp; Community</div>
+                            </li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/help/wiki/FAQ" class="landing-sitemap__link">Frequently Asked Questions</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/community/forums" class="landing-sitemap__link">Community Forums</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/community/livestreams" class="landing-sitemap__link">Live Streams</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/community/forums/topics/create?forum_id=5" class="landing-sitemap__link">Report an Issue</a></li>
+                                                    </ul>
+                    </div>
+                                    <div class="osu-layout__col osu-layout__col--sm-4">
+                        <ul class="landing-sitemap__list">
+                            <li class="landing-sitemap__item">
+                                <div class="landing-sitemap__header">Legal &amp; Status</div>
+                            </li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/legal/terms" class="landing-sitemap__link">Terms</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/legal/privacy" class="landing-sitemap__link">Privacy</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://osu.ppy.sh/legal/copyright" class="landing-sitemap__link">Copyright (DMCA)</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://twitter.com/osustatus" class="landing-sitemap__link">Server Status</a></li>
+                                                            <li class="landing-sitemap__item"><a href="https://github.com/ppy" class="landing-sitemap__link">Source Code</a></li>
+                                                    </ul>
+                    </div>
+                            </div>
+        </div>
+
+        <div class="landing-footer-social">
+            <a href="https://osu.ppy.sh/home/support" class="landing-footer-social__icon landing-footer-social__icon--support">
+                <span class="fas fa-heart"></span>
+            </a>
+            <a href="https://osu.ppy.sh/help/wiki/Twitter" class="landing-footer-social__icon landing-footer-social__icon--twitter">
+                <span class="fab fa-twitter"></span>
+            </a>
+        </div>
+
+        <footer class="no-print footer footer--landing">
+        <div class="footer__row">ppy powered 2007-2019</div>
+
+    <div class="js-sync-height--target" data-sync-height-id="permanent-fixed-footer" style="min-height: 0px;"></div>
+</footer>
+    </footer>
+
+    <div id="popup-container">
+    <div class="alert alert-dismissable popup-clone col-md-6 col-md-offset-3 text-center" style="display: none">
+        <button type="button" data-dismiss="alert" class="close"><i class="fas fa-times"></i></button>
+        <span class="popup-text"></span>
+    </div>
+    <div class="empty-popup empty-popup--clone" style="display: none">
+        <div class="popup-content"></div>
+    </div>
+</div>
+                    </div>
+        
+        <div class="fixed-bar
+                js-fixed-element
+                js-fixed-bottom-bar
+                js-sticky-footer--fixed-bar">
+            <div class="js-permanent-fixed-footer
+                    js-sync-height--reference" data-sync-height-target="permanent-fixed-footer">
+                            </div>
+        </div>
+        <audio class="js-audio" preload="auto"></audio>
+
+        <script data-turbolinks-eval="always">
+    var csrf = "GqruBLdfgr8PaB4Gh5uPYcJO8kyhmcNakoWoqmQd";
+    var section = "home";
+    var page = "index";
+    var canonicalUrl = "";
+    var reloadUrl = "";
+</script>
+
+
+
+<div id="js-usercard__loading-template" class="hidden">
+    
+    <div class="js-react--user-card" data-react-turbolinks-loaded="1"><div class="user-card user-card--highlightable user-card--card"><div class="user-card__background-overlay"></div><div class="user-card__card"><div class="user-card__content user-card__content--details"><div class="user-card__user"><div class="user-card__avatar-space"><div class="user-card__avatar-spinner"><div class="la-ball-clip-rotate"></div></div></div></div><div class="user-card__details"><div class="user-card__username"><div class="u-ellipsis-overflow">Loading...</div></div></div></div></div></div></div>
+</div>
+        <div class="loading-overlay js-loading-overlay">
+    <div class="loading-overlay__container">
+                    <div class="loading-overlay__follow-point
+                    loading-overlay__follow-point--1">
+                ›
+            </div>
+
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--1
+                        loading-overlay__circle--approach"></div>
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--1
+                        loading-overlay__circle--hit"></div>
+                                <div class="loading-overlay__follow-point
+                    loading-overlay__follow-point--2">
+                ›
+            </div>
+
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--2
+                        loading-overlay__circle--approach"></div>
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--2
+                        loading-overlay__circle--hit"></div>
+                                <div class="loading-overlay__follow-point
+                    loading-overlay__follow-point--3">
+                ›
+            </div>
+
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--3
+                        loading-overlay__circle--approach"></div>
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--3
+                        loading-overlay__circle--hit"></div>
+                                <div class="loading-overlay__follow-point
+                    loading-overlay__follow-point--4">
+                ›
+            </div>
+
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--4
+                        loading-overlay__circle--approach"></div>
+                            <div class="loading-overlay__circle
+                        loading-overlay__circle--4
+                        loading-overlay__circle--hit"></div>
+                        </div>
+</div>
+        <div id="popup-container">
+    <div class="alert alert-dismissable popup-clone col-md-6 col-md-offset-3 text-center" style="display: none">
+        <button type="button" data-dismiss="alert" class="close"><i class="fas fa-times"></i></button>
+        <span class="popup-text"></span>
+    </div>
+    <div class="empty-popup empty-popup--clone" style="display: none">
+        <div class="popup-content"></div>
+    </div>
+</div>
+
+            
+
+    <script id="json-posts" type="application/json">
+        [{"id":714,"edit_url":"https:\/\/github.com\/ppy\/osu-wiki\/tree\/master\/news\/2019-11-19-osu-idol-2019-finals-community-voting.md","first_image":"\/help\/wiki\/shared\/news\/2019-11-19-osu-idol-2019-finals-community-voting\/banner.jpg","published_at":"2019-11-19T22:20:00+00:00","updated_at":"2019-11-19T22:21:42+00:00","slug":"2019-11-19-osu-idol-2019-finals-community-voting","title":"osu!idol 2019 Finals: Community Voting"},{"id":713,"edit_url":"https:\/\/github.com\/ppy\/osu-wiki\/tree\/master\/news\/2019-11-13-new-featured-artist-panda-eyes.md","first_image":"https:\/\/assets.ppy.sh\/artists\/55\/header.jpg","published_at":"2019-11-13T16:00:00+00:00","updated_at":"2019-11-13T15:50:29+00:00","slug":"2019-11-13-new-featured-artist-panda-eyes","title":"New Featured Artist: Panda Eyes"},{"id":712,"edit_url":"https:\/\/github.com\/ppy\/osu-wiki\/tree\/master\/news\/2019-11-12-project-loved-week-of-november-10th.md","first_image":"\/help\/wiki\/shared\/news\/banners\/project-loved.jpg","published_at":"2019-11-12T22:00:00+00:00","updated_at":"2019-11-12T22:01:20+00:00","slug":"2019-11-12-project-loved-week-of-november-10th","title":"Project Loved: Week of November 10th"},{"id":711,"edit_url":"https:\/\/github.com\/ppy\/osu-wiki\/tree\/master\/news\/2019-11-12-winter-2019-fanart-contest.md","first_image":"https:\/\/assets.ppy.sh\/contests\/82\/header.jpg","published_at":"2019-11-12T09:45:00+00:00","updated_at":"2019-11-12T11:37:06+00:00","slug":"2019-11-12-winter-2019-fanart-contest","title":"Winter 2019 Fanart Contest"}]
+    </script>
+    
+
+</body></html>
